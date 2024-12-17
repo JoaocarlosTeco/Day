@@ -1,0 +1,17 @@
+let passosParaCafune = 10;
+
+function mostrarResposta(resposta) {
+  // Mostra a resposta do usuário
+  const feedback = document.getElementById("feedback");
+  feedback.innerHTML = `<p>Você escolheu: ${resposta}</p>`;
+
+  // Decrementa os passos para o cafuné
+  passosParaCafune--;
+
+  // Exibe a mensagem "Tá 10 passos de ganhar um cafuné"
+  if (passosParaCafune > 0) {
+    feedback.innerHTML += `<p>Você está a ${passosParaCafune} passos de ganhar um cafuné!</p>`;
+  } else {
+    feedback.innerHTML += `<p>Você ganhou um cafuné! 🥳</p>`;
+  }
+}
