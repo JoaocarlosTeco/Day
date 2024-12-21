@@ -167,22 +167,22 @@
     <script>
       // Função para exibir a resposta e avançar para a próxima fase
       function mostrarResposta(resposta, fase) {
-        if (fase == 1) {
+        if (fase === 1) {
           alert(
-            "Ahhh esse demorar e que provavel que estarei rezando não sei ksksks"
+            "Ahhh esse demorar é que provavelmente estarei rezando, não sei ksksks"
           );
           document.getElementById("question1").style.display = "none"; // Esconde a fase 1
           document.getElementById("question2").style.display = "block"; // Exibe a fase 2
-        } else if (fase == 2) {
-          alert("Pra onde voce for irei ir junto contigo simbora kssksksk");
+        } else if (fase === 2) {
+          alert("Pra onde você for, irei junto contigo. Simbora kssksksk!");
           document.getElementById("question2").style.display = "none"; // Esconde a fase 2
           document.getElementById("question3").style.display = "block"; // Exibe a fase 3
-        } else if (fase == 3) {
-          alert("Independente da resposta saiba que sempre estarei contigo");
+        } else if (fase === 3) {
+          alert("Independente da resposta, saiba que sempre estarei contigo.");
           document.getElementById("question3").style.display = "none"; // Esconde a fase 3
           document.getElementById("question4").style.display = "block"; // Exibe a fase 4
-        } else if (fase == 4) {
-          alert("Aproveitando se quiser dou cafune kskssksk ");
+        } else if (fase === 4) {
+          alert("Aproveitando, se quiser dou cafuné kskssksk.");
           document.getElementById("question4").style.display = "none"; // Esconde a fase 4
           document.getElementById("final-message").style.display = "block"; // Exibe a fase final
         }
